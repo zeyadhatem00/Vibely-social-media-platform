@@ -17,7 +17,7 @@ export default function ChangePass() {
   });
   let navigate = useNavigate();
 
-  let { token } = useContext(authcontext);
+  let { token, setToken } = useContext(authcontext);
 
   let {
     register,
@@ -47,6 +47,8 @@ export default function ChangePass() {
     onSuccess: () => {
       toast.success("Password Changed");
       state.close();
+      localStorage.removeItem("token");
+      setToken(null);
       navigate("/");
     },
 
