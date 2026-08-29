@@ -112,7 +112,7 @@ export default function UpdateComment({
                   "
             size="full"
           >
-            <Modal.Dialog className=" h-fit absolute justify-end w-[80%] shadow-none bg-transparent">
+            <Modal.Dialog className=" h-fit absolute justify-end lg:w-[80%] shadow-none bg-transparent">
               <form className="w-full" onSubmit={handleSubmit(submitcomment)}>
                 <div
                   className={`mt-4 mb-5 flex items-start gap-3 rounded-2xl border focus:border-emerald-600 bg-white p-4 transition `}
