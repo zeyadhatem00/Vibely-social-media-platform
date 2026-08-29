@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.font {
+  font-family: "Rubik", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a8a7a7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eeecec;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d8fa98;
+}
+
+::selection {
+  color: white;
+  background-color: #d8fa98;
+}
+
+[data-sonner-toast][data-mounted="true"] {
+  animation: slide-in-left 0.4s ease-out;
+}
